@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1 class="text-center">線上報修</h1>
+    @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2 >@Html.ActionLink("報修清單", "Index", "Lists", null, new { style = "color:black" })</h2>
+        <p class="text-info">
+            清單內含有所有已登記的物件
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2 >@Html.ActionLink("登記報修", "Create", "Lists", null, new { style = "color:black" })</h2>
+        <p class="text-info">登記需要報修的物件</p>
+    </div>
+</div>
